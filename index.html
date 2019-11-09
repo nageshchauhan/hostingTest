@@ -1,1 +1,27 @@
-<h1>TEsting</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+    	<title>Messenger</title>
+        <script src="extResource/angular.js" type="application/javascript" ></script>
+        <script src="extResource/angular-route.js" type="application/javascript"></script>
+        <script src="appResource/application.js" type="application/javascript"></script>
+        <script src="appResource/service.js" type="application/javascript"></script>
+        <script src="appResource/controller.js" type="application/javascript"></script>
+    </head>
+    <body ng-app="messenger">
+    	<div class="container">
+    		<div class="header">Welcome to Blog</div>
+    		<div style="display: flex">
+	    		<div class="menu">
+	    			<div class="menu-item"><a href="#/createMessage">Create Blog</a></div>
+	    			<div class="menu-item"><a href="#/viewMyMessage">View My Blog</a></div>
+	    			<div class="menu-item"><a href="#/viewAllMessage">View All Blog</a></div>
+	    		</div>
+	    		<div ng-view style="display:flex;"></div>
+    		</div>
+	        <div class="footer">This is footer</div>
+        </div>
+        <link rel="stylesheet" href="appResource/css/style.css" />
+    </body>
+</html>
