@@ -1,0 +1,24 @@
+<div class="mainContent">
+	{{heading}}
+	
+	<div class="messageCard">
+		<div style="display:flex;">
+			<div style="float:left;width:40%">{{message.author}}</div>
+			<div style="float:right;width:60%;text-align:right">{{message.created | date:'medium'}}</div>
+		</div> 
+		<div>
+			<input type="button" value="Delete"/>
+		</div>
+		<div style="background:white;border:1px solid black;">
+			<div style="background:white;min-height:200px;width:100%;">{{message.message}}</div>
+			<!-- <textarea rows="10" cols='100' data-ng-model="message.message" readonly></textarea> -->
+		</div>
+		<div>
+			<input type="button" value="Like" /><input type="button" value="Dislike">
+		</div>
+		<div>
+			<div>This is comment</div>
+		</div>
+	</div>
+	  <br>
+</div>

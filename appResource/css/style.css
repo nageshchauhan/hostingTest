@@ -1,0 +1,45 @@
+body{
+    font-family: Arial;
+}
+.container{
+    min-height: 500px;
+}
+.header, .footer{
+    height: 40px;
+    background-color: beige;
+    text-align: center;
+    font-family: Arial;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.menu{
+	
+	float: left;
+}
+.menu-item{
+	margin: 25px 60px;
+	cursor: pointer;
+	text-decoration:none;
+}
+
+.menu-item > a{
+	text-decoration: none;
+    color: black;
+}
+.mainContent{
+    min-height: 500px;
+    width:100%;
+}
+
+.messageCard{
+ 	margin: 10px 0px;
+ 	border: 1px solid grey;
+ 	background: antiquewhite;
+ 	margin: 10px 0px 10px 20px;
+}
+
+.footer{
+   	font-size: 15px;
+    text-align: left
+}

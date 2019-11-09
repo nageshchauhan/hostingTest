@@ -1,0 +1,20 @@
+<div class="mainContent">
+	{{heading}}
+	<div data-ng-repeat="message in messages | orderBy:'created':true">
+		<div class="messageCard">
+			<div style="display:flex;">
+				<div style="float:left;width:40%">{{message.author}}</div>
+				<div style="float:right;width:60%;text-align:right">{{message.created | date:'medium'}}</div>
+			</div> 
+			<div>
+				<input type="button" value="Edit" data-ng-click="editBlog(message.id)"/>
+				<input type="button" value="Delete"/>
+				<input type="button" value="View detail" data-ng-click="viewDetailedBlog(message.id)"/>
+			</div>
+			<div style="background:white;border:1px solid black;">
+				{{message.message}}
+			</div>
+		</div>
+		  <br>
+	</div>
+</div>
